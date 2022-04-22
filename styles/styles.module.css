@@ -1,33 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
-.container{
-    background-color: #b0b0b0;
-    height: 100vh;
-    width: 100vw;
+
+.title{
+  color: white;
+}
+
+.search{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    width: 15vw;
 }
 
 .btn{
-    background-color: #faaaaf;
+    background-color: #CAA8F5;
     text-decoration: none;
     height: 3vh;
     width: 8vw;
-    border-color: #faaaaf;
-    margin-top: 2vh;
+    border-color: #CAA8F5;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
     font-size: large;
+    align-self: center;
+    border-radius: 6px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    color: black;
 }
 
-.form{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.btn:hover{
+    background-color: #9984D4;
+    transition: 0.2s;
+    cursor: pointer;
+    color: white;
 }
 
+.input::placeholder{
+  color: #592E83
+}
 .input{
     text-align: center;
     height: 2vh;
     font-size: large;
+    border-radius: 6px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background-color: #9984D4;
+    color: #592E83;
+}
+ 
+  .wrapper {
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .wrapper h1 {
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  
+  .team {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .team .team_member {
+    background: #592E83;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 25vw;
+    padding: 50px;
+    line-height: 20px;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+  }
+  
+  .team .team_member h3 {
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .team .team_member p.role {
+    color: #242424;
+    margin: 10px 1px;
+    font-size: large;
+    text-transform: uppercase;
+  }
+  
+  .role span {
+    color: white;
+    font-family: 700 Roboto, sans-serif;
+    margin-left: 4px;
+  }
+  
+  .team .team_member p {
+    text-align: justify;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+  }
+  
+  span .team .team_member .team_img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  
+  .team .team_member .team_img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    clip-path: circle();
+    margin-right: 0.5rem;
+  }
+  
+.bio{
+  color:white;
 }
