@@ -48,7 +48,7 @@
     border: 0 none;
     outline: 0;
     background-color: #9984D4;
-    color: #592E83;
+    color: white;
 }
  
   .wrapper {
@@ -92,7 +92,7 @@
   }
   
   .team .team_member p.role {
-    color: #242424;
+    color: #CAA8F5;
     margin: 10px 1px;
     font-size: large;
     text-transform: uppercase;
