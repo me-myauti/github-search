@@ -15,22 +15,15 @@ export default function Index() {
     axios.get(`/${name}`)
     .then((res)=>{
       setData(res.data)
-      document.getElementById('bio').innerHTML = res.data.bio
-      document.getElementById('name').innerHTML = res.data.login
-      document.getElementById('followers').innerHTML = res.data.followers
-      document.getElementById('following').innerHTML = res.data.following
-      document.getElementById('repos').innerHTML = res.data.public_repos
-      document.getElementById('img').src = res.data.avatar_url
     })
     .catch((err)=>{
       console.log(err)
     })
   }
-    
 
   return (
     <div className={styles.wrapper}>
-    <h1 className={styles.title}>GitHub portfolio</h1>
+    <h1 className={styles.title}>Github portfolio</h1>
     <div className={styles.search}>
       <input 
         type="text" 
@@ -47,24 +40,22 @@ export default function Index() {
         <div className={styles.team_img}>
           <img
             id="img"
-            src={dataUser?.avatar_url}
+            src={dataUser?.avatar_url || 'https://github.githubassets.com/images/modules/logos_page/Octocat.png'}
           />
         </div>
-        <h3 id="name"/>
+        <h3 id="name">{dataUser?.login}</h3>
         <div className={styles.flex}>
           <div>
-            <p className={styles.role}>Seguidores:<span id="followers"/></p>
+            <p className={styles.role}>Seguidores:<span id="followers">{dataUser?.followers == 0 ? '0' : dataUser?.followers || '😴'}</span></p>
           </div>
           <div>
-            <p className={styles.role}>Seguindo:<span id="following"/></p>
+            <p className={styles.role}>Seguindo:<span id="following">{dataUser?.following == 0 ? '0' : dataUser?.following || '😴'}</span></p>
           </div>
           <div>
-            <p className={styles.role}>
-                Repos:<span id="repos"/>
-            </p>
+            <p className={styles.role}>Repos:<span id="repos">{dataUser?.public_repos == 0 ? '0' : dataUser?.public_repos || '😴'}</span></p>
           </div>
         </div>
-        <p className={styles.bio}id="bio"/>
+        <p className={styles.bio}id="bio">{dataUser?.bio}</p>
       </div>
     </div>
   </div>
