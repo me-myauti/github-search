@@ -1,25 +1,29 @@
-# API Routes Example with CORS
+# Portfolio Project
 
-Next.js ships with [API routes](https://nextjs.org/docs/api-routes/introduction) which provides an easy solution to build your own `API`.
+This is a project to test some front-end and back-end skills
 
-This example shows how to create an `API` endpoint with [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) headers, using the [cors](https://github.com/expressjs/cors) package.
+Im using NextJS, but in this particular case i could've used a vanilla reactJS project, because im not making use of the api routes from NextJS to consume the github API. Anyways, i hope you enjoy the project!.
 
-## Deploy your own
+## Requirements
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/api-routes-cors)
+To assure that the following instructions will run in your machine, please check these following requirements: 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/api-routes-cors&project-name=api-routes-cors&repository-name=api-routes-cors)
+* Desirable node version installed >= 16.14
+* Desirable npm version installed >= 8.5
 
 ## How to use
+* Clone repo 
+    ```
+        git clone https://github.com/me-myauti/portfolio-project.git
+    ```
+* Execute [`npm install`](https://docs.npmjs.com/cli/v6/commands/npm-install) into the directory that has been created after the git clone.
+    * The path should look like this
+        ```
+        \your\path\to\portfolio-project
+        ```
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+* After all the project dependencies installed successfully, run [`npm run dev`](https://nextjs.org/learn/basics/create-nextjs-app/setup)
 
-```bash
-npx create-next-app --example api-routes-cors api-routes-cors-app
-# or
-yarn create next-app --example api-routes-cors api-routes-cors-app
-# or
-pnpm create next-app -- --example api-routes-cors api-routes-cors-app
-```
+* Open your browser and go to ```localhost:3000```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+After all these steps you should be good to go!
