@@ -15,8 +15,8 @@
 .btn{
     background-color: #CAA8F5;
     text-decoration: none;
-    height: 3vh;
-    width: 8vw;
+    width: 100%;
+    max-width: 8vw;
     border-color: #CAA8F5;
     margin-top: 1vh;
     margin-bottom: 2vh;
@@ -26,6 +26,7 @@
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
+    font-family: 700 Roboto, sans-serif;
     color: black;
 }
 
@@ -37,7 +38,8 @@
 }
 
 .input::placeholder{
-  color: #592E83
+  color: #592E83;
+  font-family: 700 Roboto, sans-serif;
 }
 .input{
     text-align: center;
@@ -52,7 +54,6 @@
 }
  
   .wrapper {
-    margin-top: 50px;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -60,7 +61,7 @@
   
   .wrapper h1 {
     font-size: 52px;
-    margin-bottom: 60px;
+    margin-bottom: 5%;
     text-align: center;
   }
   
@@ -74,11 +75,10 @@
   
   .team .team_member {
     background: #592E83;
-    margin: 5px;
-    margin-bottom: 50px;
-    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
     padding: 50px;
-    line-height: 20px;
     border-radius: 15px;
     color: white;
     position: relative;
@@ -93,6 +93,9 @@
   
   .team .team_member p.role {
     color: #CAA8F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin: 10px 1px;
     font-size: large;
     text-transform: uppercase;
@@ -101,7 +104,6 @@
   .role span {
     color: white;
     font-family: 700 Roboto, sans-serif;
-    margin-left: 4px;
   }
   
   .team .team_member p {
@@ -110,7 +112,8 @@
   
   .flex {
     display: flex;
-    justify-content: space-around;
+    width:100%;
+    justify-content: space-evenly;
     text-transform: uppercase;
   }
   
@@ -128,11 +131,105 @@
   .team .team_member .team_img img {
     width: 200px;
     height: 200px;
-    object-fit: cover;
+    object-fit: scale-down;
     clip-path: circle();
-    margin-right: 0.5rem;
   }
   
 .bio{
   color:white;
 }
+
+
+/* USUAL PHONES */
+@media only screen and (max-device-width: 414px), (max-device-height: 844px) {
+
+    .wrapper {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper h1 {
+      font-size: 52px;
+      margin-bottom: 12%;
+      text-align: center;
+    }
+
+    .btn{
+      background-color: #CAA8F5;
+      text-decoration: none;
+      max-width: 40%;
+      border-color: #CAA8F5;
+      margin-top: 1vh;
+      margin-bottom: 2vh;
+      font-size: large;
+      align-self: center;
+      border-radius: 6px;
+      box-shadow: 0 0 0 0;
+      border: 0 none;
+      outline: 0;
+      color: black;
+  }
+
+    .search{
+      display: flex;
+      align-self: center;
+      flex-direction: column;
+      width: 70%;
+      max-width: 80vw;
+    } 
+
+    .input{
+      text-align: center;
+      height: 4vh;
+      font-size: large;
+      border-radius: 6px;
+      box-shadow: 0 0 0 0;
+      border: 0 none;
+      outline: 0;
+      background-color: #9984D4;
+      font-family: 700 Roboto, sans-serif;
+      color: white;
+    }
+
+    .team {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 10%;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    .team .team_member {
+      background: #592E83;
+      margin: 5px;
+      width: 60%;
+      height: 10%;
+      padding: 50px;
+      line-height: 20px;
+      border-radius: 15px;
+      color: white;
+      position: relative;
+    }
+
+    .team .team_member p.role {
+      color: #CAA8F5;
+      margin: 10px 1px;
+      font-size: small;
+      text-transform: uppercase;
+    }
+
+    .role span {
+      color: white;
+      font-size: 13px;
+    }
+    .team .team_member .team_img img {
+      width: 120px;
+      height: 120px;
+      object-fit: scale-down;
+      clip-path: circle();
+    }
+  }
+
+  /* USUAL PHONES */
