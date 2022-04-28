@@ -1,5 +1,5 @@
 import styles from '../styles/styles.module.css';
-import{ useState, useEffect } from 'react'
+import{ useState } from 'react'
 import axios from '../services/axiosConfig';
 
 export default function Index() {
@@ -60,7 +60,6 @@ export default function Index() {
     </div>
   </div>
   )
-  
 }
 
 
