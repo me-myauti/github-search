@@ -2,7 +2,7 @@
 
 This is a project to test some front-end and back-end skills
 
-Im using NextJS, but in this particular case i could've used a vanilla reactJS project, because im not making use of the api routes from NextJS to consume the github API. Anyways, i hope you enjoy the project!.
+I'm using NextJS, but in this particular case i could've used a vanilla reactJS project, because I'm not making use of the api routes from NextJS to consume the github API. Anyways, i hope you enjoy the project!.
 
 ## Requirements
 
