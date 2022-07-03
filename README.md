@@ -16,7 +16,7 @@ To assure that the following instructions will run in your machine, please check
     ```
         git clone https://github.com/me-myauti/portfolio-project.git
     ```
-* Execute [`npm install`](https://docs.npmjs.com/cli/v6/commands/npm-install) into the directory that has been created after the git clone.
+* Run [`npm install`](https://docs.npmjs.com/cli/v6/commands/npm-install) into the directory that has been created after the git clone.
     * The path should look like this
         ```
         \your\path\to\portfolio-project
